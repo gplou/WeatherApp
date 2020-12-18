@@ -1,0 +1,15 @@
+<div *ngIf="weatherDays" class="weather-box">
+  <div class="weather-box-days">
+    <div class="a" *ngFor="let weather of weatherDays">
+      <div class="weather-day">
+        {{weather.datetime | date:'EEEE'}}
+      </div>
+      <div class="weather-img">
+        <img src="./assets/weatherbit/{{weather.img}}">
+      </div>
+      <div class="weather-temp">
+        {{weather.maxTemperature}} ºC
+      </div>
+    </div>
+  </div>
+</div>

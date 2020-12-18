@@ -1,0 +1,5 @@
+<app-form (data)="getCountry($event)"></app-form>
+<div *ngIf="data?.country && data.city">
+  <app-current-weather [data]="data"></app-current-weather>
+  <app-weekly-weather [data]="data"></app-weekly-weather>
+</div>

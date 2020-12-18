@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="searchWeather()" class="form">
+    <div>
+        <mat-form-field class="form-input">
+            <mat-label>País</mat-label>
+            <input class="input-text" matInput placeholder="Ej. España" formControlName="country">
+            <mat-error>País es obligatorio</mat-error>
+        </mat-form-field>
+        <mat-form-field class="form-input">
+            <mat-label>Ciudad</mat-label>
+            <input class="input-text" matInput placeholder="Ej. Barcelona" formControlName="city">
+            <mat-error>Ciudad es obligatorio</mat-error>
+        </mat-form-field>
+        <div class="form-input">
+            <button [disabled]="form.invalid" attr.dis class="btn-signup" mat-raised-button color="primary">Buscar</button>
+        </div>
+    </div>
+</form>

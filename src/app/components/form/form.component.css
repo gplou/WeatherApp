@@ -1,0 +1,24 @@
+.form {
+  display: inline-block;
+  position: relative;
+  min-width: 150px;
+  max-width: 500px;
+  margin: auto;
+  left: 50%;
+  top: 110px;
+  transform: translate(-50%, -50%);
+}
+
+.form-input {
+  width: 100%;
+}
+
+.input-text {
+  color: white;
+}
+
+.btn-signup {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}

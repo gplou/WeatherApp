@@ -1,0 +1,19 @@
+* {
+  color: #fff;
+}
+
+.weather-box {
+  display: inline-block;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.weather-box-days {
+  display: flex;
+}
+
+.weather-box-days div{
+  text-align: center;
+}

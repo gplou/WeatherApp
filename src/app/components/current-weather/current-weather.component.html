@@ -1,0 +1,35 @@
+<div *ngIf="weather" class="weather-box">
+  <mat-card class="example-card">
+    <div class="weather-img">
+      <img mat-card-image *ngIf="weather.img" [src]="weather.img" (load)="testLoad()">
+    </div>
+    <mat-card-content>
+      <table class="weather-table-info">
+        <tr>
+          <td>Temperatura:</td>
+          <td>{{weather.temperature | number:'1.1-1'}} ºC</td>
+        </tr>
+        <tr>
+          <td>Max/Min:</td>
+          <td>
+            {{weather.maxTemperature | number:'1.1-1'}}/
+            {{weather.minTemperature | number:'1.1-1'}} ºC
+          </td>
+        </tr>
+        <tr>
+          <td>Humedad:</td>
+          <td>{{weather.humidity}} %</td>
+        </tr>
+        <tr>
+          <td>Viento:</td>
+          <td>{{weather.windSpeed | number:'1.1-1'}} Km/h</td>
+        </tr>
+        <tr>
+          <td>Descripción:</td>
+          <td>{{weather.description}}</td>
+        </tr>
+      </table>
+    </mat-card-content>
+  </mat-card>
+</div>
+
